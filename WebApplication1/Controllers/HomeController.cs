@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
@@ -11,8 +10,6 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.MaxFilesCount = 5;
-            ViewBag.MaxFileSize = 5;
             return View();
         }
 
@@ -21,13 +18,6 @@ namespace WebApplication1.Controllers
             ViewBag.Message = "Your application description page.";
             ViewBag.MaxFilesCount = 5;
             ViewBag.MaxFileSize = 5;
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
